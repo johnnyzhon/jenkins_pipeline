@@ -8,7 +8,8 @@ pipeline {
         stage('check_confilt') {
             steps {
                 echo 'enter into confilt check'
-                java --version
+                java -version
+                pwd
             }
         }
         stage('prepare_env') {
