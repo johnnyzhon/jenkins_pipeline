@@ -8,8 +8,6 @@ pipeline {
         stage('check_confilt') {
             steps {
                 echo 'enter into confilt check'
-                java -version
-                pwd
             }
         }
         stage('prepare_env') {
@@ -20,8 +18,6 @@ pipeline {
         stage('run_test') {
             steps {
                 echo 'enter into test stage'
-                robot '--version'
-                python '--version'
             }
         }
     }
