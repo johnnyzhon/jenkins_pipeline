@@ -15,7 +15,6 @@ pipeline {
         stage('prepare_env') {
             steps {
                 echo 'enter into prepare env'
-                git --version
             }
         }
         stage('run_test') {
