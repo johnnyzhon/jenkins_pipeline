@@ -20,8 +20,8 @@ pipeline {
         stage('run_test') {
             steps {
                 echo 'enter into test stage'
-                robot --version
-                python --version
+                robot '--version'
+                python '--version'
             }
         }
     }
